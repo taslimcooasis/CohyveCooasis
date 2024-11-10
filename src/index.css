@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bg-color-b {
+  background-image: radial-gradient(
+    farthest-side at 70% 40%,
+    #7d22ff -80%,
+    #0C0C0C 50%
+  ) !important;
+  width: 100%;
+}
+
+.bg-col {
+background-image: radial-gradient(
+  farthest-side at 10% 65%,
+  #7d22ff -80%,
+  #0C0C0C 50%
+) !important;
+width: 100%;
+}
+
+.bg-gray-100 {
+background-color: #1B1B1B !important;
+}
