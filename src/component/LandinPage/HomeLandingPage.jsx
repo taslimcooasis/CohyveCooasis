@@ -5,7 +5,8 @@ import Struggling from './Struggling'
 import CreativeService from './CreativeService'
 import GlimpseWork from './GlimpseWork'
 import FutureOfDesign from './FutureOfDesign'
-import Frequently from './Frequently'
+import FooterFrequently from './FooterFrequently'
+import JoinOurEcosystem from './JoinOurEcosystem'
 
 const HomeLandingPage = () => {
   return (
@@ -16,7 +17,8 @@ const HomeLandingPage = () => {
      <CreativeService />
      <GlimpseWork />
      <FutureOfDesign />
-     <Frequently />
+     <JoinOurEcosystem />
+     <FooterFrequently />
     </div>
   )
 }

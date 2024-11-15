@@ -9,9 +9,12 @@ const Banner = () => {
             <p className="py-2 px-2 rounded-[13px] text-[14px] md:text-[15px] bg-[#1B1B1B] text-[#FCFCD8] text-center max-w-[430px] mx-auto">
               Unmatched quality, efficient processes & transparent pricing.
             </p>
-            <h1 className="text-[32px] md:text-[60px] lg:text-[90px] text-[#FCFCD8] leading-[40px] md:leading-[70px] lg:leading-[80px] max-w-[900px] text-center mx-auto pt-5">
+            <h1
+              className="f-Nohemi-ExtraLight-BF6438cc58a2634 font-normal text-[32px] md:text-[60px] lg:text-[90px] leading-[40px] md:leading-[70px] lg:leading-[80px] max-w-[900px] text-center mx-auto pt-5 text-transparent bg-clip-text bg-gradient-to-r from-[#FCFCD8] via-[#FCFCD8] to-[#7d22ff]"
+            >
               Nex-gen design ecosystem
             </h1>
+
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 pt-8 md:pt-16">
             <button className="py-3 px-5 border-[1px] border-[#FCFCD80F] text-[14px] md:text-[15px] text-[#FCFCD8] rounded-[14px] bg-[#1B1B1BBA]">
@@ -56,7 +59,8 @@ const Banner = () => {
             <p className="text-[#FCFCD880] text-[14px] md:text-[15px] leading-[15.7px] pb-5">
               Trusted By
             </p>
-            <img src="/images/cohyev-logos.svg" alt="" className="mx-auto w-full md:w-auto" />
+            <img src="/images/trusted-1.svg" alt="" className="mx-auto w-full md:w-auto mt-4" />
+            <img src="/images/trusted-2.svg" alt="" className="mx-auto w-full md:w-auto mt-4" />
           </div>
         </div>
       </section>

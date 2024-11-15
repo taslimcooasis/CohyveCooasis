@@ -9,11 +9,29 @@ const GlimpseWork = () => {
           A glimpse of our previous work
           </h2>
          <div className="max-w-[1150px] mx-auto">
-         <div>
-            <img src="/images/first.svg" alt="" />
+         <div className='grid grid-cols-11'>
+            <div className='col-span-2'>
+              <img src="/images/gallery-img-1.svg" alt="" className='!h-[240px]' />
+              <img src="/images/gallery-img-2.svg" alt="" className='mt-3' />
+            </div>
+            <div className='col-span-3 mx-4'>
+              <img src="/images/gallery-img-3.svg" alt="" />
+              <img src="/images/gallery-img-4.svg" alt="" className='mt-3' />
+            </div>
+            <div className='col-span-6'>
+              <img src="/images/gallery-img-5.svg" alt="" />
+            </div>
           </div>
-          <div className='pt-4'>
-            <img src="/images/second.svg" alt="" />
+          <div className='pt-4 grid grid-cols-11 flex gap-4'>
+            <div className='col-span-3'>
+            <img src="/images/gallery-img-6.svg" alt="" />
+            </div>
+            <div className='col-span-3'>
+            <img src="/images/gallery-img-7.svg" alt="" />
+            </div>
+            <div className='col-span-5'>
+            <img src="/images/gallery-img-8.svg" alt="" />
+            </div>
           </div>
          </div>
          <div className='flex justify-center pt-16'>
