@@ -90,39 +90,45 @@ const CreativeService = () => {
     <>
     <section className='bg-[#0C0C0C] pt-24'>
      <div className="container">
-     <h2 className="text-[60px] text-[#FCFCD8] text-center font-semibold leading-[60px] mb-20 mx-auto max-w-[800px]">
+     <h2 className="f-Nohemi-Light-BF6438cc583f70b text-[60px] text-[#FCFCD8] text-center font-semibold leading-[60px] mb-16 mx-auto max-w-[800px]">
      All creative service under one roof
       </h2>
-       <div className='flex items-center justify-center gap-3'>
+       <marquee behavior="" direction="right">
+       <div className='flex items-center justify-start gap-3'>
         {btn.map((btn, index) => (
           <div key={index}>
             <button className='flex items-center bg-[#1B1B1BBA] border-[1px] border-[#FCFCD80F] rounded-[10px] px-3 py-2 text-[#FCFCD8] text-[16px] font-normal'>
-            <img src={btn.imgSrc} alt="" />
-            <span className='ml-2'>{btn.title}</span>
+            <img src={btn.imgSrc} alt="" className='w-[23px]' />
+            <span className='f-Nohemi-Light-BF6438cc583f70b ml-2 pt-1'>{btn.title}</span>
             </button>
           </div>
         ))}
        </div>
+       </marquee>
+       <marquee behavior="" direction="left">
        <div className='flex items-center justify-center gap-3 my-3'>
         {btnSecondRow.map((btnSecondRow, index) => (
           <div key={index}>
             <button className='flex items-center bg-[#1B1B1BBA] border-[1px] border-[#FCFCD80F] rounded-[10px] px-3 py-2 text-[#FCFCD8] text-[16px] font-normal'>
-            <img src={btnSecondRow.imgSrc} alt="" />
-            <span className='ml-2'>{btnSecondRow.title}</span>
+            <img src={btnSecondRow.imgSrc} alt="" className='w-[23px]' />
+            <span className='f-Nohemi-Light-BF6438cc583f70b ml-2 pt-1'>{btnSecondRow.title}</span>
             </button>
           </div>
         ))}
        </div>
-       <div className='flex items-center justify-center gap-3'>
+       </marquee>
+       <marquee behavior="" direction="right">
+       <div className='flex items-center justify-start gap-3'>
         {btnThirdRow.map((btnThirdRow, index) => (
           <div key={index}>
             <button className='flex items-center bg-[#1B1B1BBA] border-[1px] border-[#FCFCD80F] rounded-[10px] px-3 py-2 text-[#FCFCD8] text-[16px] font-normal'>
-            <img src={btnThirdRow.imgSrc} alt="" />
-            <span className='ml-2'>{btnThirdRow.title}</span>
+            <img src={btnThirdRow.imgSrc} alt="" className='w-[23px]' />
+            <span className='f-Nohemi-Light-BF6438cc583f70b ml-2 pt-1'>{btnThirdRow.title}</span>
             </button>
           </div>
         ))}
        </div>
+       </marquee>
      </div>
      </section>
     </>

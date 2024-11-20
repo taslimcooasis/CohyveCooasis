@@ -1,10 +1,13 @@
 import { Link, BrowserRouter } from "react-router-dom";
 import styles from "./index.module.css";
 import { useState, useEffect } from "react";
+import HideSec from "./HideSec";
+import { RainbowButton } from "../ui/rainbow-button";
 
 function NavBar() {
   const [showNavbar, setShowNavbar] = useState(false);
   const [affix, setAffix] = useState(false);
+  const [showHideSec, setShowHideSec] = useState(false); // State for showing/hiding <HideSec />
 
   const handleMenu = () => {
     setShowNavbar((prevState) => !prevState);
@@ -18,8 +21,11 @@ function NavBar() {
     }
   };
 
+  const toggleHideSec = () => {
+    setShowHideSec((prev) => !prev); // Toggle visibility
+  };
+
   useEffect(() => {
-    // Only run the effect if `window` is available (client-side only)
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", handleScroll);
       return () => {
@@ -29,14 +35,20 @@ function NavBar() {
   }, []);
 
   return (
-    <BrowserRouter>  {/* Wrap your component in BrowserRouter */}
-      <header className={`p-3 lg:p-4 ${styles.header} ${affix ? styles.affix : ''}`} >
+    <BrowserRouter>
+      <header
+        className={`p-3 lg:p-4 ${styles.header} ${affix ? styles.affix : ""}`}
+      >
         <div className="container mx-auto px-4 py-2 lg:py-3 lg:px-8">
           <nav className={styles.navbar}>
             <div>
               <img src="/images/cohvey-logo.svg" alt="Logo" className="w-[90%]" />
             </div>
-            <div className={`${styles["navbar-collapse"]} ${showNavbar ? styles.show : ""}`}>
+            <div
+              className={`${styles["navbar-collapse"]} ${
+                showNavbar ? styles.show : ""
+              }`}
+            >
               {showNavbar && (
                 <div
                   className={`cursor-pointer ml-6 mb-4 lg:hidden ${styles.position}`}
@@ -45,28 +57,34 @@ function NavBar() {
                   <img src="/images/icons/icons8-close.svg" alt="Close" />
                 </div>
               )}
-              <ul className={`${styles["navbar-nav"]} lg:flex items-center mx-auto`}>
-                <li>
+              <ul
+                className={`${styles["navbar-nav"]} lg:flex items-center mx-auto`}
+              >
+                <li className="f-Nohemi-Light-BF6438cc583f70b font-normal">
                   <Link to="/" className={styles["nav-link"]}>
                     Services
                   </Link>
                 </li>
-                <li>
+                <li className="f-Nohemi-Light-BF6438cc583f70b font-normal">
                   <Link to="/products" className={styles["nav-link"]}>
                     Our Work
                   </Link>
                 </li>
-                <li>
-                  <Link to="/contact" className={styles["nav-link"]}>
+                <li className="f-Nohemi-Light-BF6438cc583f70b font-normal">
+                  <Link
+                    to="#"
+                    onClick={toggleHideSec} // Handle click to toggle <HideSec />
+                    className={styles["nav-link"]}
+                  >
                     Product
                   </Link>
                 </li>
-                <li>
+                <li className="f-Nohemi-Light-BF6438cc583f70b font-normal">
                   <Link to="/contact" className={styles["nav-link"]}>
                     Resources
                   </Link>
                 </li>
-                <li>
+                <li className="f-Nohemi-Light-BF6438cc583f70b font-normal">
                   <Link to="/contact" className={styles["nav-link"]}>
                     Creator
                   </Link>
@@ -74,17 +92,18 @@ function NavBar() {
               </ul>
             </div>
             <div className="flex items-center">
-              <button className={styles.btn}>Join as a creator</button>
               <button
-                className={`relative overflow-hidden rounded-[20px] font-semibold text-black text-lg flex items-center justify-center px-3 py-3 border-[1px] border-[#FCFCD80F] ${styles.btn}`}
+                className={`f-Nohemi-Light-BF6438cc583f70b ${styles.btn}`}
               >
-                <span className="relative z-10">Join Waitlist</span>
-                <span className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 -z-10 rounded-[20px] blur-lg"></span>
+                Join as a creator
               </button>
+              <RainbowButton className="f-Nohemi-Light-BF6438cc583f70b rounded-[15px] text-[#FCFCD8] text-[14px] flex items-center justify-center px-5 pb-2 pt-3 border-[1px] border-[#FCFCD80F] backdrop-blur-lg bg-[#1B1B1BBA]">Join Waitlist</RainbowButton>
             </div>
           </nav>
         </div>
       </header>
+      {/* Conditionally render <HideSec /> */}
+      {showHideSec && <HideSec />}
     </BrowserRouter>
   );
 }

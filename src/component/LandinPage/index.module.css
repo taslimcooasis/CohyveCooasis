@@ -9,7 +9,7 @@
 
 .header > div {
   border-radius: 30px;
-  background: rgb(255, 255, 255, .30);
+  background: #1F1F1FEB;
 }
 
 .header .navbar {
