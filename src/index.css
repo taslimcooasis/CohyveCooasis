@@ -3,8 +3,17 @@
 @tailwind utilities;
 
 .container {
+  max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.text-\[rgb\(0\2c 0\2c 0\2c 65\%\)\] {
+  color: #FCFCD8 !important;
+}
+
+.bg-\[linear-gradient\(-75deg\2c hsl\(var\(--primary\)\/10\%\)_calc\(var\(--x\)\+20\%\)\2c hsl\(var\(--primary\)\/50\%\)_calc\(var\(--x\)\+25\%\)\2c hsl\(var\(--primary\)\/10\%\)_calc\(var\(--x\)\+100\%\)\)\] {
+  background-image: none !important;
 }
 
 .bg-color-b {
@@ -28,12 +37,11 @@ width: 100%;
 .bg-col-footer {
   background-image: radial-gradient(
     farthest-side at 10% 72%,
-    #7d22ff -300%,
+    #7d22ff -200%,
     #0C0C0C 50%
   ) !important;
   width: 100%;
   }
-  
 
 .bg-gray-100 {
 background-color: #1B1B1B !important;

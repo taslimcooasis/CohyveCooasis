@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTheme } from "next-themes";
 import { MagicCard } from "../ui/magic-card";
+import {motion} from 'framer-motion';
+import {fadeIn} from '../../variant'; 
 
 const Struggling = () => {
   const { theme } = useTheme();
@@ -41,15 +43,20 @@ const Struggling = () => {
     <section className="bg-col">
       <div className="container max-w-[1100px]">
         <div className="flex flex-col items-center justify-center pt-24">
-          <h2 className="f-Nohemi-Light-BF6438cc583f70b text-[60px] text-[#FCFCD8] text-center leading-[60px] mb-20 max-w-[800px]">
+          <motion.h2 
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{once: false, amount: 0.9}}
+          className="f-Nohemi-Light-BF6438cc583f70b text-[60px] text-[#FCFCD8] text-center leading-[60px] mb-20 max-w-[800px]">
             Is your company struggling with design?
-          </h2>
+          </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             {challenges.map((challenge, index) => (
               <div key={index}>
                 <MagicCard
                 className='bg-[#30303066] backdrop-blur-xl text-center px-6 pt-8 pb-10 rounded-[35px] border-0 cursor-pointer'
-                  gradientColor={theme === "dark" ? "#262626" : "#0C0C0C"}
+                  gradientColor={theme === "dark" ? "#7d22ff" : "#7d22ff4d"}
                 >
                   <img src={challenge.imgSrc} className="w-16 h-16 mx-auto mb-7" />
                   <h3 className="f-Nohemi-Light-BF6438cc583f70b text-[#FCFCD8] text-[33px] leading-[34px] font-normal text-center mb-5 max-w-[280px] mx-auto">{challenge.title}</h3>

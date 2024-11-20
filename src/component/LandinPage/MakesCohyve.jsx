@@ -1,12 +1,19 @@
 import React from "react";
+import {motion} from 'framer-motion';
+import {fadeIn} from '../../variant'; 
 
 const MakesCohyve = () => {
   return (
     <>
       <section className="bg-[#0C0C0C] pt-20">
-        <h2 className="f-Nohemi-Light-BF6438cc583f70b text-[50px] text-[#FCFCD8] text-center font-normal leading-[50px] pb-16 mx-auto max-w-[700px]">
+        <motion.h2 
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.9}}
+        className="f-Nohemi-Light-BF6438cc583f70b text-[50px] text-[#FCFCD8] text-center font-normal leading-[50px] pb-16 mx-auto max-w-[700px]">
           What makes cohyve unique
-        </h2>
+        </motion.h2>
         <div className="container max-w-[1100px] rounded-[20px] makes-bg">
           <div className="p-6">
             {/* Comparison Table */}

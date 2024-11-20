@@ -2,7 +2,6 @@ import { Link, BrowserRouter } from "react-router-dom";
 import styles from "./index.module.css";
 import { useState, useEffect } from "react";
 import HideSec from "./HideSec";
-import { RainbowButton } from "../ui/rainbow-button";
 
 function NavBar() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -22,7 +21,7 @@ function NavBar() {
   };
 
   const toggleHideSec = () => {
-    setShowHideSec((prev) => !prev); // Toggle visibility
+    setShowHideSec((prev) => !prev);
   };
 
   useEffect(() => {
@@ -36,6 +35,7 @@ function NavBar() {
 
   return (
     <BrowserRouter>
+      <div className={`h-[20px] ${affix ? styles.topAffix : ""}`}></div>
       <header
         className={`p-3 lg:p-4 ${styles.header} ${affix ? styles.affix : ""}`}
       >
@@ -97,7 +97,7 @@ function NavBar() {
               >
                 Join as a creator
               </button>
-              <RainbowButton className="f-Nohemi-Light-BF6438cc583f70b rounded-[15px] text-[#FCFCD8] text-[14px] flex items-center justify-center px-5 pb-2 pt-3 border-[1px] border-[#FCFCD80F] backdrop-blur-lg bg-[#1B1B1BBA]">Join Waitlist</RainbowButton>
+              <button className="f-Nohemi-Light-BF6438cc583f70b rounded-[14px] text-[#0C0C0C] text-[15px] flex items-center justify-center px-5 pb-2 pt-3 border-[1px] border-[#FCFCD80F] bg-[#FCFCD8]">Join Waitlist</button>
             </div>
           </nav>
         </div>

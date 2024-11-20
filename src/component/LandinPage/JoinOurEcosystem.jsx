@@ -20,8 +20,8 @@ const JoinOurEcosystem = () => {
           join our ecosystem of design</h1>
           <p className='mx-auto text-[20px] text-[#FCFCD880] leading-[32px] font-light text-center max-w-[480px]'>Get access to the powerhouse of design system where you <span className='text-[#FCFCD8]'>earn, learn</span> and <span className='text-[#FCFCD8]'>grow</span> together.</p>
           <div className="flex justify-center">
-          <RainbowButton className="f-Nohemi-Light-BF6438cc583f70b mt-16 pb-3 pt-4 px-5 border-[1px] border-[#FCFCD80F] text-[18px] md:text-[18px] text-[#FCFCD8] rounded-[14px] bg-[#1B1B1BBA]"> Join our community</RainbowButton>
-           </div>
+          <button className="f-Nohemi-Light-BF6438cc583f70b mt-14 pb-[8px] pt-[14px] px-5 border-[1px] border-[#FCFCD80F] text-[18px] md:text-[18px] text-[#0C0C0C] rounded-[14px] bg-[#FCFCD8]">Join our community</button>
+           </div> 
             <div>
               <p className='f-Nohemi-Light-BF6438cc583f70b text-[18px] text-[#FCFCD8] leading-[16px] font-normal text-center mt-8'>
               +10k people joined

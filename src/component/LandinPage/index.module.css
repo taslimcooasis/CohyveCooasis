@@ -42,6 +42,16 @@
   top: 16px;
 }
 
+.topAffix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(31px);
+  z-index: 9;
+}
+
 @media (min-width:991px) and (max-width:1200px) {
  
   .navbar-nav li a {

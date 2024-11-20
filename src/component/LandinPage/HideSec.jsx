@@ -3,7 +3,7 @@ import React from "react";
 const HideSec = () => {
   return (
     <>
-      <section className="bg-[#0C0C0C] pt-28 absolute left-[40px] z-20">
+      <section className="bg-[#0C0C0C] pt-28 absolute left-[130px] z-20">
         <div className="container">
           <div className="bg-[#1F1F1FEB] text-white p-6 pb-14 rounded-[30px] mx-auto">
             {/* Main container */}

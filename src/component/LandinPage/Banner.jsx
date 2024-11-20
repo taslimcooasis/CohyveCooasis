@@ -1,10 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
-import { RainbowButton } from "../ui/rainbow-button";
-import GradualSpacing from "../ui/gradual-spacing";
+import ShinyButton from "../ui/shiny-button";
+import { cn } from "../../lib/utils";
+import Marquee from "../ui/marquee";
+import {motion} from 'framer-motion';
+import {fadeIn} from '../../variant'; 
 
 const Banner = () => {
   const [isVisible, setIsVisible] = useState(false); // Added state to track visibility
   const sectionRef = useRef(null); // Reference for the section
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,16 +46,21 @@ const Banner = () => {
       <section ref={sectionRef} className="bg-color-b min-h-screen">
         <div className="container pt-[80px] lg:pt-[160px] px-4 md:px-8">
           <div className="text-center">
-            <RainbowButton className="f-Nohemi-Light-BF6438cc583f70b cursor-pointer opacity-80 pb-2 pt-3 px-2 rounded-[13px] text-[14px] md:text-[15px] bg-[#1B1B1B] text-[#FCFCD8] text-center max-w-[465px] mx-auto">Unmatched quality, efficient processes & transparent pricing.</RainbowButton>
-           <div className="!max-w-[900px] mx-auto">
-           <GradualSpacing
-              className="f-Nohemi-Light-BF6438cc583f70b text-[32px] md:text-[60px] lg:text-[90px] leading-[40px] md:leading-[70px] lg:leading-[80px] text-center pt-5 text-transparent bg-clip-text bg-gradient-to-r from-[#FCFCD8] via-[#FCFCD8] to-[#7d22ff] pb-2"
-              text="Nex-gen design ecosystem"
-            />
-           </div>
+            <ShinyButton className="f-Nohemi-Light-BF6438cc583f70b cursor-pointer pb-2 pt-3 px-4 opacity-50 mb-4 rounded-[13px] text-[14px] md:text-[15px] bg-[#1B1B1B] text-[#FCFCD8] text-center max-w-[570px] mx-auto">Unmatched quality, efficient processes & transparent pricing.</ShinyButton>
+            <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once: false, amount: 0.9}}
+            className="!max-w-[900px] mx-auto">
+              <h2
+                className="f-Nohemi-Light-BF6438cc583f70b text-[32px] md:text-[60px] lg:text-[90px] leading-[40px] md:leading-[70px] lg:leading-[80px] text-center pt-5 text-transparent bg-clip-text bg-gradient-to-r from-[#FCFCD8] via-[#FCFCD8] to-[#7d22ff] pb-2 animate-fadeIn">
+                Nex-gen design ecosystem
+              </h2>
+            </motion.div>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 pt-8 md:pt-16">
-            <RainbowButton className="f-Nohemi-Light-BF6438cc583f70b rounded-[14px] text-[#FCFCD8] text-[15px] flex items-center justify-center px-5 pb-2 pt-3 border-[1px] border-[#FCFCD80F] backdrop-blur-lg bg-[#1B1B1BBA]">Join Waitlist</RainbowButton>
+            <button className="f-Nohemi-Light-BF6438cc583f70b rounded-[14px] text-[#0C0C0C] text-[15px] flex items-center justify-center px-5 pb-2 pt-3 border-[1px] border-[#FCFCD80F] bg-[#FCFCD8]">Join Waitlist</button>
             <button className="f-Nohemi-Light-BF6438cc583f70b pt-3 pb-2 px-5 border-[1px] border-[#9393710f] text-[14px] md:text-[15px] text-[#FCFCD8] rounded-[14px]">
               How It Works
             </button>
@@ -107,20 +116,91 @@ const Banner = () => {
             <p className="f-Nohemi-Light-BF6438cc583f70b text-[#FCFCD880] text-[13px] md:text-[14px] leading-[15.7px] pb-4">
               Trusted By
             </p>
-            <marquee behavior="" direction="left">
-              <img
-                src="/images/trusted-1.svg"
-                alt=""
-                className="mx-auto cursor-pointer w-full md:w-auto mt-4 animate"
-              />
-            </marquee>
-            <marquee behavior="" direction="right">
-              <img
-                src="/images/trusted-2.svg"
-                alt=""
-                className="cursor-pointer mx-auto w-full md:w-auto animate-right"
-              />
-            </marquee>
+            <div>
+              <Marquee pauseOnHover className="[--duration:20s]">
+                <div className="flex items-center justify-center gap-3 mt-5">
+                  <img
+                    src="/images/cohyve-netflix.svg"
+                    alt=""
+                    className="mx-auto cursor-pointer"
+                  />
+                  <img
+                    src="/images/cohyve-netflix.svg"
+                    alt=""
+                    className="mx-auto cursor-pointer"
+                  />
+                  <img
+                    src="/images/cohyve-netflix.svg"
+                    alt=""
+                    className="mx-auto cursor-pointer"
+                  />
+                  <img
+                    src="/images/cohyve-netflix.svg"
+                    alt=""
+                    className="mx-auto cursor-pointer"
+                  />
+                  <img
+                    src="/images/cohyve-netflix.svg"
+                    alt=""
+                    className="mx-auto cursor-pointer"
+                  />
+                  <img
+                    src="/images/cohyve-netflix.svg"
+                    alt=""
+                    className="mx-auto cursor-pointer"
+                  />
+                  <img
+                    src="/images/cohyve-netflix.svg"
+                    alt=""
+                    className="mx-auto cursor-pointer"
+                  />
+                  <img
+                    src="/images/cohyve-netflix.svg"
+                    alt=""
+                    className="mx-auto cursor-pointer"
+                  />
+                </div>
+              </Marquee>
+              <Marquee reverse pauseOnHover className="[--duration:20s]">
+                <div className="flex items-center justify-center gap-4 mt-4">
+                  <img
+                    src="/images/cohyve-netflix.svg"
+                    alt=""
+                    className="mx-auto cursor-pointer"
+                  />
+                  <img
+                    src="/images/cohyve-netflix.svg"
+                    alt=""
+                    className="mx-auto cursor-pointer"
+                  />
+                  <img
+                    src="/images/cohyve-netflix.svg"
+                    alt=""
+                    className="mx-auto cursor-pointer"
+                  />
+                  <img
+                    src="/images/cohyve-netflix.svg"
+                    alt=""
+                    className="mx-auto cursor-pointer"
+                  />
+                  <img
+                    src="/images/cohyve-netflix.svg"
+                    alt=""
+                    className="mx-auto cursor-pointer"
+                  />
+                  <img
+                    src="/images/cohyve-netflix.svg"
+                    alt=""
+                    className="mx-auto cursor-pointer"
+                  />
+                  <img
+                    src="/images/cohyve-netflix.svg"
+                    alt=""
+                    className="mx-auto cursor-pointer"
+                  />
+                </div>
+              </Marquee>
+            </div>
           </div>
         </div>
       </section>

@@ -1,5 +1,7 @@
 // BriefingComponent.js
 import React, { useState } from 'react';
+import {motion} from 'framer-motion';
+import {fadeIn} from '../../variant'; 
 
 const DesignTeam = () => {
   const [activeStep, setActiveStep] = useState(1);
@@ -35,10 +37,15 @@ const DesignTeam = () => {
   return (
     <>
       <section className='bg-[#0C0C0C] pt-24'>
-        <h2 className="f-Nohemi-Light-BF6438cc583f70b text-[50px] text-[#FCFCD8] text-center font-medium leading-[50px] pb-20 mx-auto max-w-[600px]">
+        <motion.h2 
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.9}}
+        className="f-Nohemi-Light-BF6438cc583f70b text-[50px] text-[#FCFCD8] text-center font-medium leading-[50px] pb-20 mx-auto max-w-[600px]">
           Cohyve is your extended design team at
           automation
-        </h2>
+        </motion.h2>
         <div className="container max-w-[1100px] border-[1px] border-[#FCFCD81A] rounded-[20px] bg-colo">
           <div className="flex">
             {/* Sidebar */}
@@ -140,7 +147,7 @@ const DesignTeam = () => {
             <div className="flex-1 p-8 pb-0 pr-0">
               <div className="grid grid-cols-1 gap-4">
                 {activeStep === 1 && (
-                  <img src="/images/second-dashboard.svg" alt="" />
+                  <img src="/images/second-dashboard.svg" alt="" className='rounded-br-[20px]' />
                 )}
                 {activeStep === 2 && (
                   <div className="p-6 rounded-lg">
