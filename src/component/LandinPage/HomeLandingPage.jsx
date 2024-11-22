@@ -9,7 +9,6 @@ import FooterFrequently from './FooterFrequently';
 import JoinOurEcosystem from './JoinOurEcosystem';
 import DesignTeam from './DesignTeam';
 import MakesCohyve from './MakesCohyve';
-import { RainbowButton } from "../ui/rainbow-button";
 
 const HomeLandingPage = () => {
   const [showButton, setShowButton] = useState(false);
@@ -50,13 +49,14 @@ const HomeLandingPage = () => {
       <FooterFrequently />
       {showButton && (
         <div className="flex justify-center">
-          <RainbowButton className="f-Nohemi-Light-BF6438cc583f70b fixed bottom-8 bg-[#30303066] z-20 backdrop-blur-md border-[1px] border-[#FCFCD817] rounded-[14px] flex items-center gap-2 mt-5 text-[14px] text-[#FCFCD8] pb-6 pt-7 px-5"><span>
+          <button className="f-Nohemi-Light-BF6438cc583f70b fixed bottom-8 bg-[#30303066] z-20 backdrop-blur-md border-[1px] border-[#FCFCD817] rounded-[14px] flex items-center gap-2 mt-5 text-[14px] text-[#FCFCD8] pb-2 pt-3 px-5"><span>
             <img src="/images/cohyve-btn-banner.svg" alt="" />
           </span>
             <span>
               <img src="/images/cohyve-btn-banner-2.svg" alt="" />
             </span>
-            <span>Ask RUMI Anything</span></RainbowButton>
+            <span>Ask RUMI Anything</span>
+          </button>
         </div>
       )}
     </div>

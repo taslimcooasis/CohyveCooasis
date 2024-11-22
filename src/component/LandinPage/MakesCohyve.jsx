@@ -14,7 +14,7 @@ const MakesCohyve = () => {
         className="f-Nohemi-Light-BF6438cc583f70b text-[50px] text-[#FCFCD8] text-center font-normal leading-[50px] pb-16 mx-auto max-w-[700px]">
           What makes cohyve unique
         </motion.h2>
-        <div className="container max-w-[1100px] rounded-[20px] makes-bg">
+        <div className="container max-w-[1100px] rounded-[30px] makes-bg">
           <div className="p-6">
             {/* Comparison Table */}
             <div className="py-4 px-6">

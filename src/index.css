@@ -41,7 +41,21 @@ width: 100%;
     #0C0C0C 50%
   ) !important;
   width: 100%;
+  position: relative;
+  z-index: 100;
   }
+
+.slick-arrow.slick-prev {
+  position: absolute;
+  top: -33px;
+  left: 390px;
+} 
+
+.slick-arrow.slick-next {
+  position: absolute;
+  top: -33px;
+  right: 0px;
+}
 
 .bg-gray-100 {
 background-color: #1B1B1B !important;
@@ -87,6 +101,9 @@ background-color: #1B1B1B !important;
   ) !important
 }
 
+.animate-rainbow {
+  background: #FCFCD8;
+}
 
 .f-HelveticaNeue {
   font-family: HelveticaNeue;

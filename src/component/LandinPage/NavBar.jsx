@@ -2,6 +2,7 @@ import { Link, BrowserRouter } from "react-router-dom";
 import styles from "./index.module.css";
 import { useState, useEffect } from "react";
 import HideSec from "./HideSec";
+import { RainbowButton } from "../ui/rainbow-button";
 
 function NavBar() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -35,11 +36,12 @@ function NavBar() {
 
   return (
     <BrowserRouter>
-      <div className={`h-[20px] ${affix ? styles.topAffix : ""}`}></div>
-      <header
-        className={`p-3 lg:p-4 ${styles.header} ${affix ? styles.affix : ""}`}
+      <div className={`h-[40px] ${affix ? styles.topAffix : ""}`}></div>
+     <div>
+       <header
+        className={`p-3 lg:p-6 ${styles.header} ${affix ? styles.affix : ""}`}
       >
-        <div className="container mx-auto px-4 py-2 lg:py-3 lg:px-8">
+        <div className="container mx-auto px-4 py-2 lg:py-3 lg:px-[15px]">
           <nav className={styles.navbar}>
             <div>
               <img src="/images/cohvey-logo.svg" alt="Logo" className="w-[90%]" />
@@ -97,13 +99,16 @@ function NavBar() {
               >
                 Join as a creator
               </button>
-              <button className="f-Nohemi-Light-BF6438cc583f70b rounded-[14px] text-[#0C0C0C] text-[15px] flex items-center justify-center px-5 pb-2 pt-3 border-[1px] border-[#FCFCD80F] bg-[#FCFCD8]">Join Waitlist</button>
+              <RainbowButton className="f-Nohemi-Light-BF6438cc583f70b rounded-[15px] text-[#0C0C0C] text-[15px] flex items-center justify-center px-5 pb-2 pt-3 border-[1px] border-[#FCFCD80F] hover:border-[1px] hover:border-gray-600 hover:bg-[#1F1F1FEB] hover:text-[#FCFCD8] duration-300">Join Waitlist</RainbowButton>
             </div>
           </nav>
         </div>
       </header>
       {/* Conditionally render <HideSec /> */}
+      <div className="flex justify-center">
       {showHideSec && <HideSec />}
+      </div>
+     </div>
     </BrowserRouter>
   );
 }

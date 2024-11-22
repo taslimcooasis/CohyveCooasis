@@ -46,7 +46,7 @@ const DesignTeam = () => {
           Cohyve is your extended design team at
           automation
         </motion.h2>
-        <div className="container max-w-[1100px] border-[1px] border-[#FCFCD81A] rounded-[20px] bg-colo">
+        <div className="container max-w-[1100px] border-[1px] border-[#FCFCD81A] rounded-[30px] bg-colo">
           <div className="flex">
             {/* Sidebar */}
             <div className="w-[350px] p-4 flex flex-col space-y-6 rounded-tl-[20px] rounded-bl-[20px] border-r-[1px] border-r-[#FCFCD81A]">
@@ -166,7 +166,7 @@ const DesignTeam = () => {
        <div className="container max-w-[1100px] pt-6">
        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {card.map((card, index) => (
-              <div key={card.id} className="p-6 rounded-[25px] text-center bg-[#30303066]">
+              <div key={card.id} className="p-6 rounded-[30px] text-center bg-[#30303066]">
                 <img
                   src={card.img}
                   alt="User Avatar"

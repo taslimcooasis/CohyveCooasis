@@ -55,7 +55,7 @@ const Struggling = () => {
             {challenges.map((challenge, index) => (
               <div key={index}>
                 <MagicCard
-                className='bg-[#30303066] backdrop-blur-xl text-center px-6 pt-8 pb-10 rounded-[35px] border-0 cursor-pointer'
+                className='bg-[#30303066] backdrop-blur-xl text-center px-6 pt-8 pb-10 rounded-[30px] border-0 cursor-pointer'
                   gradientColor={theme === "dark" ? "#7d22ff" : "#7d22ff4d"}
                 >
                   <img src={challenge.imgSrc} className="w-16 h-16 mx-auto mb-7" />

@@ -4,6 +4,7 @@ import { cn } from "../../lib/utils";
 import Marquee from "../ui/marquee";
 import {motion} from 'framer-motion';
 import {fadeIn} from '../../variant'; 
+import { RainbowButton } from "../ui/rainbow-button";
 
 const Banner = () => {
   const [isVisible, setIsVisible] = useState(false); // Added state to track visibility
@@ -43,8 +44,8 @@ const Banner = () => {
 
   return (
     <>
-      <section ref={sectionRef} className="bg-color-b min-h-screen">
-        <div className="container pt-[80px] lg:pt-[160px] px-4 md:px-8">
+      <section ref={sectionRef} className="bg-color-b">
+        <div className="container pt-[80px] lg:pt-[130px] px-4 md:px-8">
           <div className="text-center">
             <ShinyButton className="f-Nohemi-Light-BF6438cc583f70b cursor-pointer pb-2 pt-3 px-4 opacity-50 mb-4 rounded-[13px] text-[14px] md:text-[15px] bg-[#1B1B1B] text-[#FCFCD8] text-center max-w-[570px] mx-auto">Unmatched quality, efficient processes & transparent pricing.</ShinyButton>
             <motion.div
@@ -60,8 +61,13 @@ const Banner = () => {
             </motion.div>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 pt-8 md:pt-16">
-            <button className="f-Nohemi-Light-BF6438cc583f70b rounded-[14px] text-[#0C0C0C] text-[15px] flex items-center justify-center px-5 pb-2 pt-3 border-[1px] border-[#FCFCD80F] bg-[#FCFCD8]">Join Waitlist</button>
-            <button className="f-Nohemi-Light-BF6438cc583f70b pt-3 pb-2 px-5 border-[1px] border-[#9393710f] text-[14px] md:text-[15px] text-[#FCFCD8] rounded-[14px]">
+          <RainbowButton className="f-Nohemi-Light-BF6438cc583f70b hover:border-gray-600 hover:border-[1px] hover:bg-[#1F1F1FEB] hover:text-[#FCFCD8] duration-300 rounded-[14px] text-[#0C0C0C] text-[15px] flex items-center justify-center px-5 pb-2 pt-3 border-[1px] border-[#FCFCD80F]">
+          Join Waitlist
+          </RainbowButton>
+            {/* <button >
+              
+              </button> */}
+            <button className="f-Nohemi-Light-BF6438cc583f70b pt-3 pb-2 px-5 border-[1px] border-gray-600 text-[14px] md:text-[15px] text-[#FCFCD8] rounded-[14px]">
               How It Works
             </button>
           </div>
@@ -98,9 +104,10 @@ const Banner = () => {
               <img src="/images/bord.svg" alt="" className="w-full md:w-auto" />
             </div>
             {isVisible && (
-              <button
-                className="f-Nohemi-Light-BF6438cc583f70b absolute top-[95px] left-[520px]
-                 bg-[#30303066] z-20 backdrop-blur-md border-[1px] border-[#FCFCD817] rounded-[20px] flex items-center gap-2 mt-5 text-[14px] text-[#FCFCD8] pb-2 pt-3 px-4"
+             <div className="flex items-center justify-center">
+               <button
+                className="f-Nohemi-Light-BF6438cc583f70b absolute top-[95px]
+                 bg-[#30303066] z-20 backdrop-blur-md border-[1px] border-[#FCFCD817] rounded-[15px] flex items-center gap-2 mt-5 text-[10px] text-[#FCFCD8] pb-1 pt-2 px-3"
               >
                 <span>
                   <img src="/images/cohyve-btn-banner.svg" alt="" />
@@ -110,97 +117,93 @@ const Banner = () => {
                 </span>
                 <span>Ask RUMI Anything</span>
               </button>
+             </div>
             )}
           </div>
           <div className="text-center pt-10 md:pt-20">
             <p className="f-Nohemi-Light-BF6438cc583f70b text-[#FCFCD880] text-[13px] md:text-[14px] leading-[15.7px] pb-4">
               Trusted By
             </p>
-            <div>
-              <Marquee pauseOnHover className="[--duration:20s]">
-                <div className="flex items-center justify-center gap-3 mt-5">
-                  <img
+            <div className="relative overflow-hidden mt-6 text-white">
+            {/* Left Gradient Overlay */}
+            <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#0C0C0C] to-transparent pointer-events-none z-10"></div>
+
+            {/* Right Gradient Overlay */}
+            <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#0C0C0C] to-transparent pointer-events-none z-10"></div>
+
+            {/* Scrolling Marquee */}
+            <div className="inner-shadow-left-right">
+              <Marquee pauseOnHover={true} className="[--duration:20s]">
+                <div className="flex items-center justify-center gap-8 mt-5">
+                <img
                     src="/images/cohyve-netflix.svg"
-                    alt=""
-                    className="mx-auto cursor-pointer"
+                    alt="Netflix"
+                    className="h-10 w-auto mx-auto cursor-pointer"
+                  />
+                   <img
+                    src="/images/cohyve-netflix.svg"
+                    alt="Netflix"
+                    className="h-10 w-auto mx-auto cursor-pointer"
+                  />
+                    <img
+                    src="/images/cohyve-netflix.svg"
+                    alt="Netflix"
+                    className="h-10 w-auto mx-auto cursor-pointer"
                   />
                   <img
                     src="/images/cohyve-netflix.svg"
-                    alt=""
-                    className="mx-auto cursor-pointer"
+                    alt="Netflix"
+                    className="h-10 w-auto mx-auto cursor-pointer"
                   />
                   <img
                     src="/images/cohyve-netflix.svg"
-                    alt=""
-                    className="mx-auto cursor-pointer"
+                    alt="Netflix"
+                    className="h-10 w-auto mx-auto cursor-pointer"
                   />
                   <img
                     src="/images/cohyve-netflix.svg"
-                    alt=""
-                    className="mx-auto cursor-pointer"
-                  />
-                  <img
-                    src="/images/cohyve-netflix.svg"
-                    alt=""
-                    className="mx-auto cursor-pointer"
-                  />
-                  <img
-                    src="/images/cohyve-netflix.svg"
-                    alt=""
-                    className="mx-auto cursor-pointer"
-                  />
-                  <img
-                    src="/images/cohyve-netflix.svg"
-                    alt=""
-                    className="mx-auto cursor-pointer"
-                  />
-                  <img
-                    src="/images/cohyve-netflix.svg"
-                    alt=""
-                    className="mx-auto cursor-pointer"
+                    alt="Netflix"
+                    className="h-10 w-auto mx-auto cursor-pointer"
                   />
                 </div>
               </Marquee>
-              <Marquee reverse pauseOnHover className="[--duration:20s]">
-                <div className="flex items-center justify-center gap-4 mt-4">
-                  <img
+
+              <Marquee reverse pauseOnHover={true} className="[--duration:20s]">
+                <div className="flex items-center justify-center gap-8 mt-4">
+                <img
                     src="/images/cohyve-netflix.svg"
-                    alt=""
-                    className="mx-auto cursor-pointer"
+                    alt="Netflix"
+                    className="h-10 w-auto mx-auto cursor-pointer"
+                  />
+                    <img
+                    src="/images/cohyve-netflix.svg"
+                    alt="Netflix"
+                    className="h-10 w-auto mx-auto cursor-pointer"
+                  />
+                   <img
+                    src="/images/cohyve-netflix.svg"
+                    alt="Netflix"
+                    className="h-10 w-auto mx-auto cursor-pointer"
                   />
                   <img
                     src="/images/cohyve-netflix.svg"
-                    alt=""
-                    className="mx-auto cursor-pointer"
+                    alt="Netflix"
+                    className="h-10 w-auto mx-auto cursor-pointer"
                   />
-                  <img
+                 <img
                     src="/images/cohyve-netflix.svg"
-                    alt=""
-                    className="mx-auto cursor-pointer"
+                    alt="Netflix"
+                    className="h-10 w-auto mx-auto cursor-pointer"
                   />
-                  <img
+                    <img
                     src="/images/cohyve-netflix.svg"
-                    alt=""
-                    className="mx-auto cursor-pointer"
-                  />
-                  <img
-                    src="/images/cohyve-netflix.svg"
-                    alt=""
-                    className="mx-auto cursor-pointer"
-                  />
-                  <img
-                    src="/images/cohyve-netflix.svg"
-                    alt=""
-                    className="mx-auto cursor-pointer"
-                  />
-                  <img
-                    src="/images/cohyve-netflix.svg"
-                    alt=""
-                    className="mx-auto cursor-pointer"
+                    alt="Netflix"
+                    className="h-10 w-auto mx-auto cursor-pointer"
                   />
                 </div>
               </Marquee>
             </div>
+          </div>
           </div>
         </div>
       </section>

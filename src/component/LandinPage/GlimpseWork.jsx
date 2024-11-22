@@ -1,5 +1,4 @@
 import React from 'react';
-import { RainbowButton } from "../ui/rainbow-button";
 import {motion} from 'framer-motion';
 import {fadeIn} from '../../variant'; 
 
@@ -43,7 +42,6 @@ const GlimpseWork = () => {
           </div>
          </div>
          <div className='flex justify-center pt-16'>
-         <RainbowButton className='f-Nohemi-Light-BF6438cc583f70b pt-3 pb-2 px-5 border-[1px] border-[#FCFCD80F] text-[15px] text-[#FCFCD8] rounded-[14px] bg-[#1B1B1BBA] font-semibold'>Explore more work</RainbowButton>
          </div>
         </div>
       </section>
