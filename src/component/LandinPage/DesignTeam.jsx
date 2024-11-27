@@ -49,12 +49,12 @@ const DesignTeam = () => {
         <div className="container max-w-[1100px] border-[1px] border-[#FCFCD81A] rounded-[30px] bg-colo">
           <div className="flex">
             {/* Sidebar */}
-            <div className="w-[350px] p-4 flex flex-col space-y-6 rounded-tl-[20px] rounded-bl-[20px] border-r-[1px] border-r-[#FCFCD81A]">
+            <div className="w-[350px] p-[15px] flex flex-col space-y-6 rounded-tl-[20px] rounded-bl-[20px] border-r-[1px] border-r-[#FCFCD81A]">
               <div className="space-y-4">
                 {/* First Button */}
                 <div onClick={() => toggleVisibility(1)}>
                   <button
-                    className={`px-4 rounded-[14px] border-[1px] border-[#FFFFFF1A] w-full ${activeStep === 1 ? 'bg-grediant-btn py-7' : 'bg-[#30303021] py-4'
+                    className={`px-4 rounded-[15px] border-[1px] border-[#FFFFFF1A] w-full ${activeStep === 1 ? 'bg-grediant-btn py-7' : 'bg-[#30303021] py-4'
                       }`}
                   >
                     <div className="flex justify-between items-center">
@@ -84,7 +84,7 @@ const DesignTeam = () => {
                 {/* Second Button */}
                 <div onClick={() => toggleVisibility(2)}>
                   <button
-                    className={`px-4 rounded-[14px] border-[1px] border-[#FFFFFF1A] w-full ${activeStep === 2 ? 'bg-grediant-btn py-7' : 'bg-[#30303021] py-4'
+                    className={`px-4 rounded-[15px] border-[1px] border-[#FFFFFF1A] w-full ${activeStep === 2 ? 'bg-grediant-btn py-7' : 'bg-[#30303021] py-4'
                       }`}
                   >
                     <div className="flex justify-between items-center">
@@ -114,7 +114,7 @@ const DesignTeam = () => {
                 {/* Third Button */}
                 <div onClick={() => toggleVisibility(3)}>
                   <button
-                    className={`px-4 rounded-[14px] border-[1px] border-[#FFFFFF1A] w-full ${activeStep === 3 ? 'bg-grediant-btn py-7' : 'bg-[#30303021] py-4'
+                    className={`px-4 rounded-[15px] border-[1px] border-[#FFFFFF1A] w-full ${activeStep === 3 ? 'bg-grediant-btn py-7' : 'bg-[#30303021] py-4'
                       }`}
                   >
                     <div className="flex justify-between items-center">
@@ -147,7 +147,7 @@ const DesignTeam = () => {
             <div className="flex-1 p-8 pb-0 pr-0">
               <div className="grid grid-cols-1 gap-4">
                 {activeStep === 1 && (
-                  <img src="/images/second-dashboard.svg" alt="" className='rounded-br-[20px]' />
+                  <img src="/images/second-dashboard.svg" alt="" className='rounded-br-[30px]' />
                 )}
                 {activeStep === 2 && (
                   <div className="p-6 rounded-lg">

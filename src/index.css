@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: #0C0C0C !important;
+}
+
 .container {
   max-width: 1100px;
   margin-right: auto;
@@ -17,39 +21,32 @@
 }
 
 .bg-color-b {
-  background-image: radial-gradient(
-    farthest-side at 70% 40%,
-    #7d22ff -140%,
-    #0C0C0C 50%
-  ) !important;
+  background-image: radial-gradient(farthest-side at 70% 40%,
+      #7d22ff -140%,
+      #0C0C0C 50%) !important;
   width: 100%;
 }
 
 .bg-col {
-background-image: radial-gradient(
-  farthest-side at 10% 65%,
-  #7d22ff -150%,
-  #0C0C0C 50%
-) !important;
-width: 100%;
+  background-image: radial-gradient(farthest-side at 10% 65%,
+      #7d22ff -150%,
+      #0C0C0C 50%) !important;
+  width: 100%;
 }
 
 .bg-col-footer {
-  background-image: radial-gradient(
-    farthest-side at 10% 72%,
-    #7d22ff -200%,
-    #0C0C0C 50%
-  ) !important;
+  background-image: radial-gradient(farthest-side at 10% 72%,
+      #7d22ff -200%,
+      #0C0C0C 50%) !important;
   width: 100%;
   position: relative;
-  z-index: 100;
-  }
+}
 
 .slick-arrow.slick-prev {
   position: absolute;
   top: -33px;
-  left: 390px;
-} 
+  left: 365px;
+}
 
 .slick-arrow.slick-next {
   position: absolute;
@@ -58,47 +55,46 @@ width: 100%;
 }
 
 .bg-gray-100 {
-background-color: #1B1B1B !important;
+  background-color: #1B1B1B !important;
 }
 
 .bg-gred {
-  background-image: radial-gradient(
-    farthest-side at 25% 72%,
-    #7d22ff -50%,
-    #0C0C0C 50%
-  ) !important; 
+  background-image: radial-gradient(farthest-side at 25% 72%,
+      #7d22ff -50%,
+      #0C0C0C 50%) !important;
 }
 
 .bg-gred-2 {
-  background-image: radial-gradient(
-    farthest-side at 80% 40%,
-    #7d22ff -50%,
-    #30303066 50%
-  ) !important; 
+  background-image: radial-gradient(farthest-side at 80% 40%,
+      #7d22ff -50%,
+      #30303066 50%) !important;
 }
 
 .bg-colo {
-  background-image: radial-gradient(
-    farthest-side at 30% 40%,
-    #7d22ff -200%,
-    #30303066 70%
-  ) !important
+  background-image: radial-gradient(farthest-side at 30% 40%,
+      #7d22ff -200%,
+      #30303066 70%) !important
 }
 
 .bg-grediant-btn {
-  background-image: radial-gradient(
-    farthest-side at 50% 30%,
-    #7d22ff -500%,
-    #3030302B 90%
-  ) !important
+  background-image: radial-gradient(farthest-side at 50% 30%,
+      #7d22ff -500%,
+      #3030302B 90%) !important
 }
 
 .makes-bg {
-  background-image: radial-gradient(
-    farthest-side at 17% 32%,
-    #7d22ff -200%,
-    #3030302B 75%
-  ) !important
+  background-image: radial-gradient(farthest-side at 17% 32%,
+      #7d22ff -200%,
+      #3030302B 75%) !important
+}
+
+.grediant-b-c {
+  background: linear-gradient(90deg,
+      rgba(252, 252, 216, 0) 0%,
+      rgba(252, 252, 216, 0.6) 50%,
+      rgba(252, 252, 216, 0) 100%);
+  width: 60px;
+  height: 1px;
 }
 
 .animate-rainbow {
@@ -272,6 +268,7 @@ background-color: #1B1B1B !important;
     --color-4: 195 100% 63%;
     --color-5: 90 100% 63%;
   }
+
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
@@ -309,6 +306,7 @@ background-color: #1B1B1B !important;
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }

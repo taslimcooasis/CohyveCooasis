@@ -126,10 +126,10 @@ const Banner = () => {
             </p>
             <div className="relative overflow-hidden mt-6 text-white">
             {/* Left Gradient Overlay */}
-            <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#0C0C0C] to-transparent pointer-events-none z-10"></div>
+            <div className="absolute inset-y-0 left-0 w-14 bg-gradient-to-r from-[#0C0C0C] to-transparent pointer-events-none z-10"></div>
 
             {/* Right Gradient Overlay */}
-            <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#0C0C0C] to-transparent pointer-events-none z-10"></div>
+            <div className="absolute inset-y-0 right-0 w-14 bg-gradient-to-l from-[#0C0C0C] to-transparent pointer-events-none z-10"></div>
 
             {/* Scrolling Marquee */}
             <div className="inner-shadow-left-right">
@@ -138,32 +138,32 @@ const Banner = () => {
                 <img
                     src="/images/cohyve-netflix.svg"
                     alt="Netflix"
-                    className="h-10 w-auto mx-auto cursor-pointer"
+                    className="h-10 w-[130px] mx-auto cursor-pointer"
                   />
                    <img
                     src="/images/cohyve-netflix.svg"
                     alt="Netflix"
-                    className="h-10 w-auto mx-auto cursor-pointer"
+                    className="h-10 w-[130px] mx-auto cursor-pointer"
                   />
                     <img
                     src="/images/cohyve-netflix.svg"
                     alt="Netflix"
-                    className="h-10 w-auto mx-auto cursor-pointer"
+                    className="h-10 w-[130px] mx-auto cursor-pointer"
                   />
                   <img
                     src="/images/cohyve-netflix.svg"
                     alt="Netflix"
-                    className="h-10 w-auto mx-auto cursor-pointer"
+                    className="h-10 w-[130px] mx-auto cursor-pointer"
                   />
                   <img
                     src="/images/cohyve-netflix.svg"
                     alt="Netflix"
-                    className="h-10 w-auto mx-auto cursor-pointer"
+                    className="h-10 w-[130px] mx-auto cursor-pointer"
                   />
                   <img
                     src="/images/cohyve-netflix.svg"
                     alt="Netflix"
-                    className="h-10 w-auto mx-auto cursor-pointer"
+                    className="h-10 w-[130px] mx-auto cursor-pointer"
                   />
                 </div>
               </Marquee>
@@ -173,32 +173,32 @@ const Banner = () => {
                 <img
                     src="/images/cohyve-netflix.svg"
                     alt="Netflix"
-                    className="h-10 w-auto mx-auto cursor-pointer"
+                    className="h-10 w-[130px] mx-auto cursor-pointer"
                   />
                     <img
                     src="/images/cohyve-netflix.svg"
                     alt="Netflix"
-                    className="h-10 w-auto mx-auto cursor-pointer"
+                    className="h-10 w-[130px] mx-auto cursor-pointer"
                   />
                    <img
                     src="/images/cohyve-netflix.svg"
                     alt="Netflix"
-                    className="h-10 w-auto mx-auto cursor-pointer"
+                    className="h-10 w-[130px] mx-auto cursor-pointer"
                   />
                   <img
                     src="/images/cohyve-netflix.svg"
                     alt="Netflix"
-                    className="h-10 w-auto mx-auto cursor-pointer"
+                    className="h-10 w-[130px] mx-auto cursor-pointer"
                   />
                  <img
                     src="/images/cohyve-netflix.svg"
                     alt="Netflix"
-                    className="h-10 w-auto mx-auto cursor-pointer"
+                    className="h-10 w-[130px] mx-auto cursor-pointer"
                   />
                     <img
                     src="/images/cohyve-netflix.svg"
                     alt="Netflix"
-                    className="h-10 w-auto mx-auto cursor-pointer"
+                    className="h-10 w-[130px] mx-auto cursor-pointer"
                   />
                 </div>
               </Marquee>
