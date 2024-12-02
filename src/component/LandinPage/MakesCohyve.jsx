@@ -29,7 +29,7 @@ const MakesCohyve = () => {
 
               {/* Rows */}
               {[
-                { feature: "Pricing", cohyve: "Pay as you go", platforms: "Per task", freelancer: "Per task", agency: "Per task" },
+                { feature: "Pricing", cohyve: "Pay as you go", platforms: "Per task", freelancer: "Per task", agency: "Monthly Retainer" },
                 { feature: "Unlimited Tasks", cohyve: "✔", platforms: "-", freelancer: "-", agency: "-" },
                 { feature: "Unlimited Revisions", cohyve: "✔", platforms: "-", freelancer: "-", agency: "-" },
                 { feature: "Pre-qualified designers", cohyve: "✔", platforms: "-", freelancer: "-", agency: "-" },

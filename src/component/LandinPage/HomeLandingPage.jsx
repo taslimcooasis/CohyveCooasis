@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import ShinyButton from "../ui/shiny-button";
 import NavBar from './NavBar';
 import Banner from './Banner';
 import Struggling from './Struggling';
@@ -9,6 +10,8 @@ import FooterFrequently from './FooterFrequently';
 import JoinOurEcosystem from './JoinOurEcosystem';
 import DesignTeam from './DesignTeam';
 import MakesCohyve from './MakesCohyve';
+import HyveWallet from './HyveWallet';
+import CreativeServiceSlider from './CreativeServiceSlider';
 
 const HomeLandingPage = () => {
   const [showButton, setShowButton] = useState(false);
@@ -34,6 +37,7 @@ const HomeLandingPage = () => {
   }, []);
 
   return (
+    <>
     <div>
       <NavBar />
       <div ref={bannerRef}>
@@ -42,28 +46,32 @@ const HomeLandingPage = () => {
       <Struggling />
       <DesignTeam />
       <CreativeService />
+      <CreativeServiceSlider />
       <MakesCohyve />
       <GlimpseWork />
       <FutureOfDesign />
+      <HyveWallet />
       <JoinOurEcosystem />
       <FooterFrequently />
       <div className="flex justify-center relative">
-        <button
-          className={`f-Nohemi-Light-BF6438cc583f70b fixed bottom-8 bg-[#30303066] z-20 backdrop-blur-md border-[1px] border-[#FCFCD817] rounded-[14px] flex items-center gap-2 text-[14px] text-[#FCFCD8] pb-2 pt-3 px-5
+        <ShinyButton
+          className={`f-Nohemi-Light-BF6438cc583f70b fixed bottom-8 bg-[#30303066] z-20 backdrop-blur-md border-[1px] border-[#FCFCD817] rounded-[16px] flex items-center gap-2 text-[14px] text-[#FCFCD8] pb-1 pt-2 px-5
             transition-all duration-1000 ease-in-out transform
             ${showButton ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0 pointer-events-none'}`}
         >
+          <div className='flex justify-center items-center space-x-3 relative'>
           <span>
-            <img src="/images/cohyve-btn-banner.svg" alt="" />
+            <img src="/images/RUMI.gif" alt="" className='w-[50px] h-[50px]' />
           </span>
           <span>
-            <img src="/images/cohyve-btn-banner-2.svg" alt="" />
+            <img src="/images/cohyve-beta.svg" alt="" />
           </span>
-          <span>Ask RUMI Anything</span>
-          <div className="grediant-b-c absolute bottom-0 left-[95px]"></div>
-        </button>
+           <span>Ask RUMI Anything</span>
+          </div>
+        </ShinyButton>
       </div>
     </div>
+    </>
   );
 };
 

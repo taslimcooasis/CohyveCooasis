@@ -5,6 +5,14 @@ const FutureOfDesign = () => {
   return (
     <>
       <section className='bg-[#0C0C0C] pt-24 pb-20 relative'>
+      {/* <video
+        className="mx-auto h-[700px] object-cover"
+        src="/images/bg-video.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+      /> */}
         <div className="container">
           <div className='bg-image'>
             <img src="/images/plug-bg.svg" alt="" className='mx-auto max-w-[380px]' />

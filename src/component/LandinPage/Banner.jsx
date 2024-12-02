@@ -45,7 +45,7 @@ const Banner = () => {
   return (
     <>
       <section ref={sectionRef} className="bg-color-b">
-        <div className="container pt-[80px] lg:pt-[130px] px-4 md:px-8">
+        <div className="container pt-[80px] lg:pt-[130px]">
           <div className="text-center">
             <ShinyButton className="f-Nohemi-Light-BF6438cc583f70b cursor-pointer pb-2 pt-3 px-4 opacity-50 mb-4 rounded-[13px] text-[14px] md:text-[15px] bg-[#1B1B1B] text-[#FCFCD8] text-center max-w-[570px] mx-auto">Unmatched quality, efficient processes & transparent pricing.</ShinyButton>
             <motion.div
@@ -113,7 +113,7 @@ const Banner = () => {
                   <img src="/images/cohyve-btn-banner.svg" alt="" />
                 </span>
                 <span>
-                  <img src="/images/cohyve-btn-banner-2.svg" alt="" />
+                  <img src="/images/cohyve-beta.svg" alt="" className="max-w-[33px]" />
                 </span>
                 <span>Ask RUMI Anything</span>
               </button>

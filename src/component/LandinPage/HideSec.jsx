@@ -43,7 +43,7 @@ const HideSec = () => {
   };
   return (
     <>
-      <section className="bg-[#0C0C0C] pt-20 rounded-[30px] absolute z-20">
+      <section className="bg-[#0C0C0C] mt-12 rounded-[30px] absolute z-20">
         <div className="container">
           <div className="bg-[#1F1F1FEB] text-white p-7 pb-14 rounded-[30px] mx-auto">
             {/* Main container */}
@@ -113,7 +113,7 @@ const HideSec = () => {
                     </button>
                     {/* Thank You Message */}
                     {showMessage && (
-                      <p className="f-Nohemi-Light-BF6438cc583f70b text-[11px] mt-3 text-[#FCFCD899] leading-[16px]">
+                      <p className="f-Nohemi-Light-BF6438cc583f70b text-[11px] mt-3 text-[#FCFCD899] leading-[16px] max-w-[230px]">
                         Thank you for your interest! You will receive updates about our product launches.
                       </p>
                     )}
@@ -121,7 +121,6 @@ const HideSec = () => {
                 </div>
               </div>
 
-              {/* Middle Panel */}
               {/* Middle Panel */}
               <div className="col-span-5 space-y-6 pr-4 pl-4">
                 <div className="flex items-center justify-between">
@@ -151,7 +150,7 @@ const HideSec = () => {
                     </button>
                   </div>
                   {/* Slide 2 */}
-                  <div className="pl-4">
+                  <div className="pl-3">
                     <div className="bg-[#1B1B1B] h-[160px] rounded-bl-[10px] rounded-tl-[10px] border-[1px] border-[#FCFCD808]"></div>
                     <p className="f-Nohemi-Light-BF6438cc583f70b text-[19px] text-[#FCFCD8] leading-[22px] pt-5">
                       A Nex-gen experience lab for designers

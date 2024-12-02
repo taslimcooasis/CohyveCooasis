@@ -92,13 +92,121 @@ body {
   background: linear-gradient(90deg,
       rgba(252, 252, 216, 0) 0%,
       rgba(252, 252, 216, 0.6) 50%,
-      rgba(252, 252, 216, 0) 100%);
-  width: 60px;
-  height: 1px;
+      rgba(252, 252, 216, 0) 100%) !important;
+  width: 60px !important;
+  height: 1px !important;
+}
+
+.grediant-b-c-d {
+  background: linear-gradient(90deg,
+      rgba(252, 252, 216, 0) 0%,
+      rgba(252, 252, 216, 0.6) 50%,
+      rgba(252, 252, 216, 0) 100%) !important;
+  width: 90px !important;
+  height: 2px !important;
+}
+
+.hyvewallet {
+  background-image: radial-gradient(farthest-side at 90% 7%,
+  #F4C77E80 -60%,
+  #30303042 36%) !important
+}
+
+.stroke-neutral-200 {
+  stroke: #1E1E1E !important;
+  fill: #1E1E1E !important;
+  opacity: 30% !important;
+  letter-spacing: -5px;
+  font-size: 94px !important;
+  /* margin-left: -5px; */
+  font-family: Nohemi-Medium-BF6438cc581a509;
+  /* text-align: start; */
+}
+
+.stroke-neutral-200:hover {
+  letter-spacing: -5px !important;
+}
+
+.relative.rounded-lg.px-6.py-2.font-medium.backdrop-blur-xl.transition-shadow {
+  background-color: transparent !important;
 }
 
 .animate-rainbow {
   background: #FCFCD8;
+}
+
+/* slider in creative services */
+
+.slick-arrow:before {
+  display: none;
+}
+
+.slick-dots {
+  bottom: -40px;
+}
+
+.slick-dots li {
+  margin: 0;
+}
+
+.slick-dots li button:before {
+  font-size: 8px;
+  color: #4B5563;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffffff;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+.cursor-hide {
+  cursor: none; /* Default cursor ko hide kare */
+}
+
+/* Custom cursor style */
+#custom-cursor {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  z-index: 9999;
+  pointer-events: none; /* Mouse interaction ko block kare */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 50%;
+  background: rgba(48, 48, 48, 0.26);
+  backdrop-filter: blur(10px);
+}
+
+#custom-cursor img {
+  width: 13px;
+  height: 13px;
+}
+
+#custom-cursor h5 {
+  font-size: 14px;
+  color: #FCFCD8;
+  font-family: 'Nohemi-Light-BF6438cc583f70b';
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.slick-current .first-img {
+  min-width: 420px !important;
+}
+
+.slick-current img {
+  min-width: 350px !important;
 }
 
 .f-HelveticaNeue {
