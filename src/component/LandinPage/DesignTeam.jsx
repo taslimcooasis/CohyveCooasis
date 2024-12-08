@@ -74,7 +74,7 @@ const DesignTeam = () => {
                           Tell us which designs you need
                         </h4>
                         <p className="f-Nohemi-Light-BF6438cc583f70b text-[18px] text-[#FCFCD880] leading-[28px] pb-16 text-start">
-                          Multiple departments & people need designs, but not all tasks can be implemented in a timely manner.
+                          Multiple departments & people need designs, but not all tasks cans be implemented in a timely manner.
                         </p>
                       </div>
                     )}
